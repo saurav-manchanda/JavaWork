@@ -1,32 +1,34 @@
 package com.bridgelabz;
+
 import java.sql.Connection;
-import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import java.sql.Statement;
 
 import javax.sql.DataSource;
 
-public class JDBCViaConnectionPool {
+
+public class InsertionViaPreparedStatement {
 	public static void main(String[] args) {
 		DataSource ds=null;
 		ds=DataSourceFactory.getMySQLDataSource();
 		Connection con=null;
-		Statement st= null;
-		String query="insert into capgenimi.employees values(122,'Rahul M','Manager director')";
+		PreparedStatement pst=null;
+		String query="insert into capgenimi.employees values(?,?,?)";
 		try {
 			con=ds.getConnection();
-			st=con.createStatement();
-			st.executeUpdate(query);
-			
+			pst=con.prepareStatement(query);
+			pst.setInt(1, 111);
+			pst.setString(2, "Anamika");
+			pst.setString(3, "Intern");
+			pst.executeUpdate();
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		finally {
-			if(st!=null)
+			if(pst!=null)
 			{
 				try {
-					st.close();
+					pst.close();
 				} catch (SQLException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -42,8 +44,6 @@ public class JDBCViaConnectionPool {
 				}
 			}
 		}
-		
-		
 	}
-
+	
 }

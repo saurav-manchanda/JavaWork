@@ -13,7 +13,7 @@ public class DataSourceFactory {
 		FileInputStream fis = null;
 		MysqlDataSource mysqlDS = null;
 		try {
-			fis = new FileInputStream("/home/bridgelabz/saurav/JDBCPractice/src/com/bridgelabz/db.properties");
+			fis = new FileInputStream("/home/bridgelabz/JavaWorkspace/JDBCPractice/src/com/bridgelabz/db.properties");
 			props.load(fis);
 			mysqlDS = new MysqlDataSource();
 			mysqlDS.setURL(props.getProperty("MYSQL_DB_URL"));
