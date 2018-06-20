@@ -1,0 +1,23 @@
+[
+	{
+		"doctorName": "saurav",
+		"doctorID": "100",
+		"doctorAvailability": "AM",
+		"doctorSpecialisation": "cardiologist",
+		"countOfPatient": 1
+	},
+	{
+		"doctorName": "Rahul",
+		"doctorID": "105",
+		"doctorAvailability": "PM",
+		"doctorSpecialisation": "ortho",
+		"countOfPatient": 1
+	},
+	{
+		"doctorName": "mukesh",
+		"doctorID": "109",
+		"doctorAvailability": "both",
+		"doctorSpecialisation": "physician",
+		"countOfPatient": 0
+	}
+]
