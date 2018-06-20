@@ -108,11 +108,11 @@ public class InventoryManager {
 			inventory.getWheatArrayList().add(product);
 		}
 		objectMapper.writeValue(
-				new File("/home/bridgelabz/saurav/JavaProgramming/src/com/bridgelabz/objectoriented/InventoryFile.json"),
+				new File("/home/bridgelabz/JavaWorkspace/JavaProgramming/src/com/bridgelabz/objectoriented/InventoryFile.json"),
 				inventory);
 		JSONParser parser = new JSONParser();
 		Object obj = parser.parse(new FileReader(
-				"/home/bridgelabz/saurav/JavaProgramming/src/com/bridgelabz/objectoriented/InventoryFile.json"));
+				"/home/bridgelabz/JavaWorkspace/JavaProgramming/src/com/bridgelabz/objectoriented/InventoryFile.json"));
 		JSONObject jsonObject = (JSONObject) obj;
 		JSONArray arrayRice = (JSONArray) jsonObject.get("ricesArrayList");
 		for (int i = 0; i < arrayRice.size(); i++) {

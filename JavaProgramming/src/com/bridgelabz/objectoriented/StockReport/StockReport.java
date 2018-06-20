@@ -49,9 +49,9 @@ public class StockReport {
 			stockPortfolio.getStocks().add(stock);
 		}
 		ObjectMapper objectMapper=new ObjectMapper();
-		objectMapper.writeValue(new File("/home/bridgelabz/saurav/JavaProgramming/src/com/bridgelabz/objectoriented/StockReport.json"), stockPortfolio);
+		objectMapper.writeValue(new File("/home/bridgelabz/JavaWorkspace/JavaProgramming/src/com/bridgelabz/objectoriented/StockReport.json"), stockPortfolio);
 		JSONParser parser= new JSONParser();
-		Object object=parser.parse(new FileReader("/home/bridgelabz/saurav/JavaProgramming/src/com/bridgelabz/objectoriented/StockReport.json"));
+		Object object=parser.parse(new FileReader("/home/bridgelabz/JavaWorkspace/JavaProgramming/src/com/bridgelabz/objectoriented/StockReport.json"));
 		JSONObject jsonObject=(JSONObject) object;
 		JSONArray stockArray= (JSONArray) jsonObject.get("stocks");
 		for(int i=0;i<stockArray.size();i++) {

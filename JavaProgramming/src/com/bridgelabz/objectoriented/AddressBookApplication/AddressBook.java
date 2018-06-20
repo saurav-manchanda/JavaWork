@@ -80,7 +80,7 @@ public class AddressBook {
 	public void writeJson(JSONArray jsonArray) throws JsonGenerationException, JsonMappingException, IOException {
 		ObjectMapper objectMapper = new ObjectMapper();
 		objectMapper.writeValue(new File(
-				"/home/bridgelabz/saurav/JavaProgramming/src/com/bridgelabz/objectoriented/AddressBookApplication/AddressBook.json"),
+				"/home/bridgelabz/JavaWorkspace/JavaProgramming/src/com/bridgelabz/objectoriented/AddressBookApplication/AddressBook.json"),
 				jsonArray);
 		
 
@@ -229,7 +229,7 @@ public class AddressBook {
 	                }
 	            }  
 		 ObjectMapper mapper= new ObjectMapper();
-		 mapper.writeValue(new File("/home/bridgelabz/saurav/JavaProgramming/src/com/bridgelabz/objectoriented/AddressBookApplication/AddressBook.json"), list);
+		 mapper.writeValue(new File("/home/bridgelabz/JavaWorkspace/JavaProgramming/src/com/bridgelabz/objectoriented/AddressBookApplication/AddressBook.json"), list);
 		 ObjectMapper objectMapper = new ObjectMapper();
 		 objectMapper.writeValue(new File(filePath),list);
 		 printAddressBook(bookArray,filePath);
@@ -268,7 +268,7 @@ public class AddressBook {
 	                }
 	            }  
 		 ObjectMapper mapper= new ObjectMapper();
-		 mapper.writeValue(new File("/home/bridgelabz/saurav/JavaProgramming/src/com/bridgelabz/objectoriented/AddressBookApplication/AddressBook.json"), list);
+		 mapper.writeValue(new File("/home/bridgelabz/JavaWorkspace/JavaProgramming/src/com/bridgelabz/objectoriented/AddressBookApplication/AddressBook.json"), list);
 		 ObjectMapper objectMapper = new ObjectMapper();
 			objectMapper.writeValue(new File(filePath),list);
 		 printAddressBook(bookArray, filePath);
