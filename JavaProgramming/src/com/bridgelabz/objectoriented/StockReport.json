@@ -1,0 +1,19 @@
+{
+	"stocks": [
+		{
+			"stockName": "wipro",
+			"numberOfShares": 1000,
+			"sharePrice": 100.0
+		},
+		{
+			"stockName": "capgenimi",
+			"numberOfShares": 1200,
+			"sharePrice": 105.0
+		},
+		{
+			"stockName": "bridgelabz",
+			"numberOfShares": 800,
+			"sharePrice": 90.0
+		}
+	]
+}

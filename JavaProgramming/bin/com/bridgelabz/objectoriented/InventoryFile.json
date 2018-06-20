@@ -1,0 +1,33 @@
+{
+	"ricesArrayList": [
+		{
+			"name": "1",
+			"weight": 1,
+			"price": 1.0
+		},
+		{
+			"name": "1",
+			"weight": 1,
+			"price": 1.0
+		},
+		{
+			"name": "1",
+			"weight": 1,
+			"price": 1.0
+		}
+	],
+	"pulsesArrayList": [
+		{
+			"name": "1",
+			"weight": 1,
+			"price": 1.0
+		}
+	],
+	"wheatArrayList": [
+		{
+			"name": "1",
+			"weight": 1,
+			"price": 1.0
+		}
+	]
+}
