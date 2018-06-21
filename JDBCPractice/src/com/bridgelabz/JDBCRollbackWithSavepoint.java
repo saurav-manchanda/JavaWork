@@ -7,6 +7,10 @@ import java.sql.Statement;
 
 import javax.sql.DataSource;
 
+/**
+ * @author Saurav:
+ * Class to define an example of JDBC transaction rollback with using Savepoint	
+ */
 public class JDBCRollbackWithSavepoint {
 	public static void main(String[] args) {
 		DataSource ds = null;
