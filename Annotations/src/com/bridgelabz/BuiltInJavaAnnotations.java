@@ -39,6 +39,8 @@ public class BuiltInJavaAnnotations extends Book{
 	}
 	
 	public static void main(String[] args) {
-		
+		BuiltInJavaAnnotations bin= new BuiltInJavaAnnotations();
+		bin.bookName();
+		bin.inputString();
 	}
 }

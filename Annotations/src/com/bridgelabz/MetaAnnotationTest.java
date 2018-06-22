@@ -16,7 +16,6 @@ import java.lang.reflect.Method;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
-@Inherited
 @Documented
 @interface MyAnnotation {
 	int value();
@@ -28,6 +27,7 @@ import java.lang.reflect.Method;
  * @author Saurav:
  * Class Hello having Annotation usage
  */
+
 class Hello {
 	@MyAnnotation(value = 10)
 	public void sayHello() {
@@ -39,7 +39,7 @@ class Hello {
  * @author Saurav:
  * Class to show the use of Meta Annotations in java
  */
-public class MetaAnnotationTest extends Hello {
+public class MetaAnnotationTest extends Hello{
 	public static void main(String[] args) throws NoSuchMethodException, SecurityException {
 		Hello hello=new Hello();
 		Method m1=hello.getClass().getMethod("sayHello");
@@ -48,7 +48,7 @@ public class MetaAnnotationTest extends Hello {
 		MetaAnnotationTest meta=new MetaAnnotationTest();
 		Method m2=meta.getClass().getMethod("sayHello");
 		MyAnnotation myAnnotation1=m2.getAnnotation(MyAnnotation.class);
-		System.out.println("tha value is:"+myAnnotation.value()+ " and name is: "+myAnnotation.value2());
+		System.out.println("tha value is:"+myAnnotation1.value()+ " and name is: "+myAnnotation1.value2());
 		
 	}
 
