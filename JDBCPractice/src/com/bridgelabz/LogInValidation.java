@@ -1,3 +1,10 @@
+/********************************************************************************* *
+ * Purpose: To do login validation via JDBC
+ * 
+ * @author Saurav Manchanda
+ * @version 1.0
+ * @since 20/06/2018
+ *********************************************************************************/
 package com.bridgelabz;
 
 import java.sql.Connection;
@@ -7,6 +14,10 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Scanner;
 
+/**
+ * @author Saurav:
+ * Class to perform login validation via JDBC
+ */
 public class LogInValidation 
 {
     public static void main(String[] args) 

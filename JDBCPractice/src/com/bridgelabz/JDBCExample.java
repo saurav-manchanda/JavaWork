@@ -1,3 +1,10 @@
+/********************************************************************************* *
+ * Purpose: To perform basic JDBC operations.
+ * 
+ * @author Saurav Manchanda
+ * @version 1.0
+ * @since 21/06/2018
+ *********************************************************************************/
 package com.bridgelabz;
 
 import java.sql.Connection;

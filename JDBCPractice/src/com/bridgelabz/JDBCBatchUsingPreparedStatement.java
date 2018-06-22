@@ -1,3 +1,10 @@
+/********************************************************************************* *
+ * Purpose: To perform JDBC batch via PreparedStatement but it is not a good practice.
+ * 
+ * @author Saurav Manchanda
+ * @version 1.0
+ * @since 21/06/2018
+ *********************************************************************************/
 package com.bridgelabz;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -7,6 +14,10 @@ import javax.sql.DataSource;
 
 import com.bridgelabz.DataSourceFactory;
 
+/**
+ * @author Saurav:
+ * Class to perform JDBC Batch using Prepared Statement Interface
+ */
 public class JDBCBatchUsingPreparedStatement {
 
 	public static void main(String[] args) {

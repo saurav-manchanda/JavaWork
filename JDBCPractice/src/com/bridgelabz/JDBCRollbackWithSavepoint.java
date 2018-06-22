@@ -1,3 +1,10 @@
+/********************************************************************************* *
+ * Purpose: To define an example of JDBC transaction rollback with using Savepoint
+ * 
+ * @author Saurav Manchanda
+ * @version 1.0
+ * @since 21/06/2018
+ *********************************************************************************/
 package com.bridgelabz;
 
 import java.sql.Connection;

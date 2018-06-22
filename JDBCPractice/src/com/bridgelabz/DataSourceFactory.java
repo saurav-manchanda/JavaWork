@@ -1,3 +1,10 @@
+/********************************************************************************* *
+ * Purpose: To make a Data Source Factory that returns the datasource as requested
+ * 
+ * @author Saurav Manchanda
+ * @version 1.0
+ * @since 20/06/2018
+ *********************************************************************************/
 package com.bridgelabz;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -7,6 +14,10 @@ import javax.sql.DataSource;
 
 import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
 
+/**
+ * @author Saurav:
+ * Class Data Source Factory that returns a datasource
+ */
 public class DataSourceFactory {
 	public static DataSource getMySQLDataSource() {
 		Properties props = new Properties();

@@ -1,3 +1,10 @@
+/********************************************************************************* *
+ * Purpose: To insert a record into the database via PreparedStatement
+ * 
+ * @author Saurav Manchanda
+ * @version 1.0
+ * @since 21/06/2018
+ *********************************************************************************/
 package com.bridgelabz;
 
 import java.sql.Connection;
@@ -7,6 +14,10 @@ import java.sql.SQLException;
 import javax.sql.DataSource;
 
 
+/**
+ * @author Saurav:
+ * Class to insert a record using Prepared Statement Interface
+ */
 public class InsertionViaPreparedStatement {
 	public static void main(String[] args) {
 		DataSource ds=null;

@@ -1,3 +1,10 @@
+/********************************************************************************* *
+ * Purpose: Example of Connection Pooling
+ * 
+ * @author Saurav Manchanda
+ * @version 1.0
+ * @since 21/06/2018
+ *********************************************************************************/
 package com.bridgelabz;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -6,6 +13,10 @@ import java.sql.Statement;
 
 import javax.sql.DataSource;
 
+/**
+ * @author Saurav:
+ * Class to perform an example of how to use Connection Pooling
+ */
 public class JDBCViaConnectionPool {
 	public static void main(String[] args) {
 		DataSource ds=null;

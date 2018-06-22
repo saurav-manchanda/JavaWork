@@ -1,3 +1,10 @@
+/********************************************************************************* *
+ * Purpose: To display multiple records from the database
+ * 
+ * @author Saurav Manchanda
+ * @version 1.0
+ * @since 20/06/2018
+ *********************************************************************************/
 package com.bridgelabz;
 
 import java.sql.Connection;
@@ -7,6 +14,10 @@ import java.sql.SQLException;
 
 import javax.sql.DataSource;
 
+/**
+ * @author Saurav:
+ * Class to display multiple records fetched from the database
+ */
 public class DisplayMultipleRecords {
 	public static void main(String[] args) {
 		Connection con = null;

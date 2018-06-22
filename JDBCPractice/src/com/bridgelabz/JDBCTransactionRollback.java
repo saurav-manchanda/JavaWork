@@ -1,3 +1,10 @@
+/********************************************************************************* *
+ * Purpose: To perform JDBC Transaction Rollback Operation
+ * 
+ * @author Saurav Manchanda
+ * @version 1.0
+ * @since 21/06/2018
+ *********************************************************************************/
 package com.bridgelabz;
 
 import java.sql.Connection;
@@ -6,6 +13,10 @@ import java.sql.Statement;
 
 import javax.sql.DataSource;
 
+/**
+ * @author Saurav:
+ * To perform JDBCTransactionRollback
+ */
 public class JDBCTransactionRollback {
 	public static void main(String[] args) {
 		DataSource ds = null;
@@ -19,7 +30,7 @@ public class JDBCTransactionRollback {
 
 			con = ds.getConnection();
 			st = con.createStatement();
-			con.setAutoCommit(false);// Making Autocommit false so that now where we want to commit we can commit..
+			con.setAutoCommit(false);// Making Auto commit false so that now where we want to commit we can commit..
 			st.executeUpdate(query1);
 			System.out.println("First Operation!!");
 			st.executeUpdate(query2);
