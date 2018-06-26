@@ -4,5 +4,8 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="/home/bridgelabz/Downloads/jackson-all-1.9.9.jar"/>
 	<classpathentry kind="lib" path="/home/bridgelabz/Downloads/json-simple-1.1.jar"/>
+	<classpathentry kind="lib" path="/home/bridgelabz/Documents/Untitled Folder/c3p0-0.9.2.1.jar"/>
+	<classpathentry kind="lib" path="/home/bridgelabz/Documents/Untitled Folder/c3p0-0.9.5-pre1-sources.jar"/>
+	<classpathentry kind="lib" path="/home/bridgelabz/Documents/Untitled Folder/mchange-commons-java-0.2.6.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

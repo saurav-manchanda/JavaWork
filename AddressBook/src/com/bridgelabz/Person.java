@@ -1,170 +1,115 @@
-/********************************************************************************* *
- * Purpose: Create   Object   Oriented   Analysis   and   Design   of   a   simple   Address   Book   Problem . 
-Person class
- * 
- * @author Saurav Manchanda
- * @version 1.0
- * @since 23/06/2018
- *********************************************************************************/
+
 package com.bridgelabz;
+import java.io.Serializable;
 
 /**
- * @author Saurav: POJO class Person
+ * @author bridgelabz
+ *
  */
-public class Person {
+public class Person implements Serializable {
 	private String firstName;
 	private String lastName;
 	private String address;
 	private String city;
 	private String state;
-	private String zipcode;
-	private String phoneNumber;
+	private String zip;
+	private String phone;
+
+	public Person() {
+
+	}
 
 	/**
-	 * Constructor
+	 * Constructor to initialize the person's details while adding person to address
+	 * book
 	 * 
 	 * @param firstName
+	 *            FirstName of the person
 	 * @param lastName
+	 *            LastName of the person
 	 * @param address
+	 *            Address of the person
 	 * @param city
+	 *            City of the person
 	 * @param state
-	 * @param zipcode
-	 * @param phoneNumber
+	 *            State of the person
+	 * @param zip
+	 *            ZipCode of the person
+	 * @param phone
+	 *            PhoneNumber of the person
 	 */
-	public Person(String firstName, String lastName, String address, String city, String state, String zipcode,
-			String phoneNumber) {
+	public Person(String firstName, String lastName, String address, String city, String state, String zip,
+			String phone) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.address = address;
 		this.city = city;
 		this.state = state;
-		this.zipcode = zipcode;
-		this.phoneNumber = phoneNumber;
+		this.zip = zip;
+		this.phone = phone;
+
 	}
 
-	/**
-	 * to get the first name
-	 * 
-	 * @return
-	 */
-	public String getFirstName() {
-		return firstName;
-	}
-
-	/**
-	 * to set the first name
-	 * 
-	 * @param firstName
-	 */
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
 	}
 
-	/**
-	 * toget the last name
-	 * 
-	 * @return
-	 */
-	public String getLastName() {
-		return lastName;
-	}
-
-	/**
-	 * to set the last name
-	 * 
-	 * @param lastName
-	 */
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
 
-	/**
-	 * to get the address
-	 * 
-	 * @return
-	 */
-	public String getAddress() {
-		return address;
-	}
-
-	/**
-	 * to set the address
-	 * 
-	 * @param address
-	 */
 	public void setAddress(String address) {
 		this.address = address;
 	}
 
-	/**
-	 * to get the city name
-	 * 
-	 * @return
-	 */
-	public String getCity() {
-		return city;
-	}
-
-	/**
-	 * to set the city name
-	 * 
-	 * @param city
-	 */
 	public void setCity(String city) {
 		this.city = city;
 	}
 
-	/**
-	 * to get the state
-	 * 
-	 * @return
-	 */
-	public String getState() {
-		return state;
-	}
-
-	/**
-	 * to set the state
-	 * 
-	 * @param state
-	 */
 	public void setState(String state) {
 		this.state = state;
 	}
 
-	/**
-	 * to get the zip code
-	 * 
-	 * @return
-	 */
-	public String getZipcode() {
-		return zipcode;
+	public void setZip(String zip) {
+		this.zip = zip;
 	}
 
-	/**
-	 * to set the zipcode
-	 * 
-	 * @param zipcode
-	 */
-	public void setZipcode(String zipcode) {
-		this.zipcode = zipcode;
+	public void setPhone(String phone) {
+		this.phone = phone;
 	}
 
-	/**
-	 * to get the phone number
-	 * 
-	 * @return
-	 */
-	public String getPhoneNumber() {
-		return phoneNumber;
+	public String getFirstName() {
+		return firstName;
 	}
 
-	/**
-	 * to set the phone number
-	 * 
-	 * @param phoneNumber
-	 */
-	public void setPhoneNumber(String phoneNumber) {
-		this.phoneNumber = phoneNumber;
+	public String getLastName() {
+		return lastName;
 	}
+	
+	public String getAddress() {
+		return address;
+	}
+
+
+	public String getCity() {
+		return city;
+	}
+
+
+	public String getState() {
+		return state;
+	}
+
+
+	public String getZip() {
+		return zip;
+	}
+
+
+	public String getPhone() {
+		return phone;
+	}
+
 }
+
+
