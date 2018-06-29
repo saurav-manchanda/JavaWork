@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>Servlet</display-name>
+  <welcome-file-list>
+    <welcome-file>Welcome.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet-mapping>
+  <servlet-name>RegisterServ</servlet-name>
+  <url-pattern>/RegisterServltet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>RegisterServ</servlet-name>
+  <servlet-class>com.bridgelabz.RegisterServltet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>LoginServ</servlet-name>
+  <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>LoginServ</servlet-name>
+  <servlet-class>com.bridgelabz.LoginServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>PreLoginServ</servlet-name>
+  <url-pattern>/PreLoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>PreLoginServ</servlet-name>
+  <servlet-class>com.bridgelabz.PreLoginServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>PreRegisterServ</servlet-name>
+  <url-pattern>/PreRegister</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>PreRegisterServ</servlet-name>
+  <servlet-class>com.bridgelabz.PreRegister</servlet-class>
+  </servlet>
+  <!-- <servlet>
+  <servlet-name>register</servlet-name>
+  <jsp-file>/register.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>register</servlet-name>
+  <url-pattern>/register</url-pattern>
+  </servlet-mapping> -->
+  
+  
+</web-app>
+
