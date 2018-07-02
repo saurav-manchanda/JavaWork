@@ -6,10 +6,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 </head>
-<body bgcolor="pink">
-<h1>Welcome And Enjoy Our Site</h1>
-<%String email=(String)request.getSession().getAttribute("EMAIL");
-out.print(email);%>
-<form action="LogoutServlet" method = "post" > <input type="submit" value="Log Out"></form>
+<body bgcolor="lime">
+<center><h1>You are already registered</h1></center>
+<form action="PreRegister" method = "post" > <input type="submit" value=" Go back?"></form>
 </body>
 </html>

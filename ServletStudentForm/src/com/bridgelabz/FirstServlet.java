@@ -1,3 +1,10 @@
+/********************************************************************************* *
+ * Purpose: To make a Servlet performing Student form functionality 
+ * 
+ * @author Saurav Manchanda
+ * @version 1.0
+ * @since 2/07/2018
+ *********************************************************************************/
 package com.bridgelabz;
 
 import java.io.IOException;
@@ -7,6 +14,10 @@ import javax.servlet.GenericServlet;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 
+/**
+ * @author Saurav:
+ * Example Servlet making a Student form
+ */
 public class FirstServlet extends GenericServlet{
 	public void service(ServletRequest req,ServletResponse resp) {
 		String name=req.getParameter("nm");

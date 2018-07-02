@@ -5,50 +5,68 @@
     <welcome-file>Welcome.jsp</welcome-file>
   </welcome-file-list>
   <servlet-mapping>
-  <servlet-name>RegisterServ</servlet-name>
+    <servlet-name>RegisterServ</servlet-name>
+    <url-pattern>/RegisterServltet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>RegisterServ</servlet-name>
+    <servlet-class>com.bridgelabz.RegisterServltet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServ</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>LoginServ</servlet-name>
+    <servlet-class>com.bridgelabz.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PreLoginServ</servlet-name>
+    <url-pattern>/PreLoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>PreLoginServ</servlet-name>
+    <servlet-class>com.bridgelabz.PreLoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PreRegisterServ</servlet-name>
+    <url-pattern>/PreRegister</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>PreRegisterServ</servlet-name>
+    <servlet-class>com.bridgelabz.PreRegister</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PreSuccessServ</servlet-name>
+    <servlet-class>com.bridgelabz.PreSuccess</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PreSuccessServ</servlet-name>
+    <url-pattern>/PreSuccess</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>PreFailureServ</servlet-name>
+    <servlet-class>com.bridgelabz.PreFailure</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PreFailureServ</servlet-name>
+    <url-pattern>/PreFailure</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>LogoutServ</servlet-name>
+    <servlet-class>com.bridgelabz.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogoutServ</servlet-name>
+    <url-pattern>/LogoutServlet</url-pattern>
+  </servlet-mapping>
+  
+  <filter>
+  <filter-name>NoDuplicateEntryFilter</filter-name>
+  <filter-class>com.bridgelabz.NoDuplicateEntryFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  <filter-name>NoDuplicateEntryFilter</filter-name>
   <url-pattern>/RegisterServltet</url-pattern>
-  </servlet-mapping>
-  <servlet>
-  <servlet-name>RegisterServ</servlet-name>
-  <servlet-class>com.bridgelabz.RegisterServltet</servlet-class>
-  </servlet>
-  
-  <servlet-mapping>
-  <servlet-name>LoginServ</servlet-name>
-  <url-pattern>/LoginServlet</url-pattern>
-  </servlet-mapping>
-  <servlet>
-  <servlet-name>LoginServ</servlet-name>
-  <servlet-class>com.bridgelabz.LoginServlet</servlet-class>
-  </servlet>
-  
-  <servlet-mapping>
-  <servlet-name>PreLoginServ</servlet-name>
-  <url-pattern>/PreLoginServlet</url-pattern>
-  </servlet-mapping>
-  <servlet>
-  <servlet-name>PreLoginServ</servlet-name>
-  <servlet-class>com.bridgelabz.PreLoginServlet</servlet-class>
-  </servlet>
-  
-  <servlet-mapping>
-  <servlet-name>PreRegisterServ</servlet-name>
-  <url-pattern>/PreRegister</url-pattern>
-  </servlet-mapping>
-  <servlet>
-  <servlet-name>PreRegisterServ</servlet-name>
-  <servlet-class>com.bridgelabz.PreRegister</servlet-class>
-  </servlet>
-  <!-- <servlet>
-  <servlet-name>register</servlet-name>
-  <jsp-file>/register.jsp</jsp-file>
-  </servlet>
-  
-  <servlet-mapping>
-  <servlet-name>register</servlet-name>
-  <url-pattern>/register</url-pattern>
-  </servlet-mapping> -->
-  
-  
+  </filter-mapping>
 </web-app>
-

@@ -6,10 +6,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 </head>
-<body bgcolor="pink">
-<h1>Welcome And Enjoy Our Site</h1>
-<%String email=(String)request.getSession().getAttribute("EMAIL");
-out.print(email);%>
-<form action="LogoutServlet" method = "post" > <input type="submit" value="Log Out"></form>
+<body bgcolor="yellow">
+	<h1>Sorry!! Login Failed</h1>
+	<form action="PreLoginServlet" method = "post" > <input type="submit" value="Do you want to Retry??"></form>
 </body>
 </html>

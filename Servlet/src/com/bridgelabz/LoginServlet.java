@@ -1,3 +1,10 @@
+/********************************************************************************* *
+ * Purpose: To make a servlet for login purpose.
+ * 
+ * @author Saurav Manchanda
+ * @version 1.0
+ * @since 2/07/2018
+ *********************************************************************************/
 package com.bridgelabz;
 
 import java.io.PrintWriter;
@@ -7,9 +14,16 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+import javax.sql.DataSource;
+/**
+ * @author Saurav
+ * Class LoginServlet extending HttpServlet 
+ */
 @SuppressWarnings("serial")
 public class LoginServlet extends HttpServlet{
 	protected void doPost(HttpServletRequest req,HttpServletResponse resp ) {
@@ -18,10 +32,11 @@ public class LoginServlet extends HttpServlet{
 		Connection con=null;
 		PreparedStatement pstmt=null;
 		ResultSet rs=null;
+		
 		try {
-			Class.forName("com.mysql.jdbc.Driver");
-			String dbUrl="jdbc:mysql://localhost:3306?user=root&password=root";
-			con = DriverManager.getConnection(dbUrl);
+			DataSource ds=null;
+			ds=DataSourceFactory.getMySQLDataSource();
+			con=ds.getConnection();
 			String sql="select * from registerDB.customers where email_id=? and password=?";
 			pstmt=con.prepareStatement(sql);
 			pstmt.setString(1,email);
@@ -30,11 +45,16 @@ public class LoginServlet extends HttpServlet{
 			PrintWriter out=resp.getWriter();
 			if(rs.next())
 			{
-				resp.sendRedirect("success.jsp");
+				HttpSession session=req.getSession();
+				session.setMaxInactiveInterval(24*60*60);
+				session.setAttribute("EMAIL", email);
+				RequestDispatcher rd = req.getRequestDispatcher("PreSuccess");
+				rd.forward(req, resp);
 			}
 			else
 			{
-				out.print("<h1>Invalid Credentials.. Authentication Failed</h1><br>");
+				RequestDispatcher rd = req.getRequestDispatcher("PreFailure");
+				rd.forward(req, resp);
 			}
 		}
 			 catch(Exception e)

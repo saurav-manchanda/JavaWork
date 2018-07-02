@@ -6,11 +6,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 </head>
-<body>
+<body bgcolor="green">
 	<form action="LoginServlet" method="post">
-		E-mail: <input type="text" name="email" >
+		E-mail: <input type="text" name="email" pattern="\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,6}\b" title="must contain a proper @domain" required placeholder="Enter your email" >
 		<br></br> 
-		Password:<input type="password" name="password">
+		Password:<input type="password" name="password" required placeholder="Enter your password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[!@#\$%\^&\*])(?=.*[A-Z]).{8,}" title="Must contain at least one number,one uppercase and lowercase letter,one special symbol and at least 8 or more characters" >
 		<br></br> 
 		<input type="submit" value="login">
 		<br></br>	
