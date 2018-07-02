@@ -60,13 +60,16 @@
     <servlet-name>LogoutServ</servlet-name>
     <url-pattern>/LogoutServlet</url-pattern>
   </servlet-mapping>
-  
   <filter>
-  <filter-name>NoDuplicateEntryFilter</filter-name>
-  <filter-class>com.bridgelabz.NoDuplicateEntryFilter</filter-class>
+    <filter-name>NoDuplicateEntryFilter</filter-name>
+    <filter-class>com.bridgelabz.NoDuplicateEntryFilter</filter-class>
   </filter>
   <filter-mapping>
-  <filter-name>NoDuplicateEntryFilter</filter-name>
-  <url-pattern>/RegisterServltet</url-pattern>
+    <filter-name>NoDuplicateEntryFilter</filter-name>
+    <url-pattern>/RegisterServltet</url-pattern>
   </filter-mapping>
+  
+  <listener>
+  <listener-class>com.bridgelabz.MySessionListener</listener-class>
+  </listener>
 </web-app>
