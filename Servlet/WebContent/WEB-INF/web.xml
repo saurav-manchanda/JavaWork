@@ -68,8 +68,11 @@
     <filter-name>NoDuplicateEntryFilter</filter-name>
     <url-pattern>/RegisterServltet</url-pattern>
   </filter-mapping>
+  <listener>
+    <listener-class>com.bridgelabz.MySessionListener</listener-class>
+  </listener>
   
   <listener>
-  <listener-class>com.bridgelabz.MySessionListener</listener-class>
+    <listener-class>com.bridgelabz.MyServletRequestListener</listener-class>
   </listener>
 </web-app>
