@@ -60,6 +60,25 @@
     <servlet-name>LogoutServ</servlet-name>
     <url-pattern>/LogoutServlet</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>MailServlet</servlet-name>
+    <servlet-class>com.bridgelabz.MailServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MailServlet</servlet-name>
+    <url-pattern>/MailServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>PreEmailServ</servlet-name>
+    <servlet-class>com.bridgelabz.PreEmail</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PreEmailServ</servlet-name>
+    <url-pattern>/PreEmail</url-pattern>
+  </servlet-mapping>
+  
+  
   <filter>
     <filter-name>NoDuplicateEntryFilter</filter-name>
     <filter-class>com.bridgelabz.NoDuplicateEntryFilter</filter-class>

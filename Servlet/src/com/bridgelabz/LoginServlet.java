@@ -50,6 +50,7 @@ public class LoginServlet extends HttpServlet{
 				session.setAttribute("EMAIL", email);
 				RequestDispatcher rd = req.getRequestDispatcher("PreSuccess");
 				rd.forward(req, resp);
+				System.out.println("SESSION CREATED");
 			}
 			else
 			{

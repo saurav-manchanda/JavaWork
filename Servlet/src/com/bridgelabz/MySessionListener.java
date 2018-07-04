@@ -13,6 +13,7 @@ import javax.servlet.http.HttpSessionListener;
  */
 @WebListener
 public class MySessionListener implements HttpSessionListener {
+	static int NUMBER_OF_TIMES_SESSION_CREATED;
 
     /**
      * Default constructor. 
@@ -28,6 +29,9 @@ public class MySessionListener implements HttpSessionListener {
     	Date date=new Date();
     	SimpleDateFormat todayDate=new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
          System.out.println("Session is created at"+ todayDate.format(date));
+         NUMBER_OF_TIMES_SESSION_CREATED++;
+         System.out.println("The number of times session is created:");
+         System.out.println(NUMBER_OF_TIMES_SESSION_CREATED);
     }
 
 	/**
@@ -38,6 +42,7 @@ public class MySessionListener implements HttpSessionListener {
     	Date date=new Date();
     	SimpleDateFormat todayDate=new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
         System.out.println("Session ended at"+ todayDate.format(date));
+        
     }
 	
 }

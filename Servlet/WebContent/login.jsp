@@ -16,5 +16,6 @@
 		<br></br>	
 	</form>
 	<form action="PreRegister" method = "post" > <input type="submit" value="Registration??"></form>
+	<form action="PreEmail" method = "post" > <input type="submit" value="Forgot Password??"></form>
 </body>
 </html>
