@@ -1,3 +1,10 @@
+/********************************************************************************* *
+ * Purpose: To make a servlet which is basically sending an email
+ * 
+ * @author Saurav Manchanda
+ * @version 1.0
+ * @since 4/07/2018
+ *********************************************************************************/
 package com.bridgelabz;
 
 import java.io.IOException;
@@ -14,6 +21,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.sql.DataSource;
 
+/**
+ * @author Saurav:
+ * Class to send an email 
+ */
 public class MailServlet extends HttpServlet {
 	@Override
 	public void doPost(HttpServletRequest req, HttpServletResponse resp) {
@@ -36,7 +47,6 @@ public class MailServlet extends HttpServlet {
 			System.out.println(rs);
 			if (rs.next()) {
 				String message = rs.getString("password");
-				System.out.println("enht");
 				SendEmail.send(to, subject, message, user, password);
 				System.out.println("Email sent successfully");
 				RequestDispatcher dispatcher = req.getRequestDispatcher("login.jsp");

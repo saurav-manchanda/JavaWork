@@ -14,7 +14,6 @@ public class SendEmail
     public static void send(String to, String sub, 
                          String msg, final String user,final String pass)
     { 
-    	System.out.println(msg);
      //create an instance of Properties Class   
      Properties props = new Properties();
      
@@ -25,7 +24,6 @@ public class SendEmail
            Change accordingly, if your email id is not a gmail id
         */
      props.put("mail.smtp.host", "smtp.gmail.com");
-     //below mentioned mail.smtp.port is optional
      props.put("mail.smtp.port", "587");		
      props.put("mail.smtp.auth", "true");
      props.put("mail.smtp.starttls.enable", "true");
@@ -54,10 +52,8 @@ public class SendEmail
        message.addRecipient(Message.RecipientType.TO,new InternetAddress(to));
        message.setSubject(sub);
        message.setText(msg);
-
-       /* Transport class is used to deliver the message to the recipients */
        Transport transport = session.getTransport("smtp");
-		transport.connect("smtp.gmail.com", 587, user, pass);
+       transport.connect("smtp.gmail.com", 587, user, pass);
        Transport.send(message);
        
  
