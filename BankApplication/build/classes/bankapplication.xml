@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+    "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+    
+ <beans>
+    <bean id="bank" class= "com.bridgelabz.Bank">
+ 	<property name="bankName" value="ICICI"> </property>
+ 	<property name="account" ref="account1"></property>
+ 	</bean>
+    <bean id="person" class= "com.bridgelabz.Person">
+    <property name="personName" value="Saurav"></property>
+ 	<property name="bank" ref="bank"> </property>
+ 	</bean>
+ 	
+ 	<bean id="account1" class= "com.bridgelabz.Account">
+ 	<property name="accountNumber" value="11002340"> </property>
+ 	<property name="addressOfPerson" value="Malviya Nagar"> </property>
+ 	</bean>
+ </beans>

@@ -7,5 +7,4 @@ public class DependencyInjection {
 		d.setShape(triange);
 		d.drawShape();
 	}
-	
 }
